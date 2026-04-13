@@ -134,7 +134,7 @@ class PropertyPage(BasePage):
 
         # Random location search bar
         import random
-        locations = ["Bangi", "Petaling Jaya", "Kajang", "Bangsar"]
+        locations = ["Bangi", "Petaling Jaya", "Kajang", "Bangsar", "Kuala Lumpur", "Cheras", "Subang"]
         search_location = random.choice(locations) if location is None else location
         logger.info(f"🔍 Searching '{search_location}'")
         
