@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 import sys
 import os
+# Fix import path for pages/utils when running from tests/
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
@@ -26,13 +27,7 @@ TEST_EMAIL    = "ceiwimmessallu-4287@yopmail.com"
 TEST_PASSWORD = "StarProperty526&"
 
 
-import pytest
-
-@pytest.mark.smoke
-@pytest.mark.tc2
-@pytest.mark.enquiry
-def test_case_2_enquiry_bookmark():
-    run_test_case_2 = locals()['run_test_case_2']  # Access function
+def run_test_case_2():
     logger.info("=" * 60)
     logger.info("  TEST CASE 2: Enquiry & Bookmark Flow")
     logger.info("=" * 60)
@@ -54,7 +49,7 @@ def test_case_2_enquiry_bookmark():
         # ── Step 1: Login ──────────────────────────────────
         page.login(TEST_EMAIL, TEST_PASSWORD)
 
-        # ── Step 2: Search To Buy random ─────────────────────
+        # ── Step 2: Search To Buy ──────────────────────────
         page.search_to_buy()
 
         # ── Step 3: Capture first 2 listings ──────────────
