@@ -87,21 +87,6 @@ python tests/test_case_2_enquiry_bookmark.py
 ✅ TC2 COMPLETE: Enquiry filled (not submitted)
 ```
 
-## 🎉 Features
-- **Random data generation**
-- **Robust waits/JS clicks** (dropdowns, overlays)
-- **Comprehensive logging**
-- **Non-submitting** (ESC closes enquiry)
-- **Cross-platform** (Windows/Mac/Linux)
 
-## 🤝 Credits
-Built with ❤️ for Star Media Group QA Task.
 
----
 
-*Tested on Windows 11, Chrome latest.*
-">
-</xai:function_call > 
-
-<xai:function_call name="execute_command">
-<parameter name="command">rm TODO.md TODO_clear_bookmarks.md TODO_crash_fix.md
